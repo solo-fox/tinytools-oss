@@ -13,11 +13,4 @@ export const baseOptions: BaseLayoutProps = {
     title: 'Tinytools OSS',
     transparentMode: 'top',
   },
-  links: [
-    {
-      text: 'Docs',
-      url: '/docs',
-      active: 'nested-url',
-    },
-  ],
 };
