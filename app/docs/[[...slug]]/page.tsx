@@ -1,4 +1,5 @@
 import { source } from "@/lib/source";
+import { Popup, PopupContent, PopupTrigger } from 'fumadocs-twoslash/ui';
 import {
   DocsPage,
   DocsBody,
@@ -34,7 +35,14 @@ export default async function Page(props: {
       <DocsTitle>{page.data.title}</DocsTitle>
       <DocsDescription>{page.data.description}</DocsDescription>
       <DocsBody>
-        <MDX components={{ ...defaultMdxComponents }} />
+        <MDX
+          components={{
+            ...defaultMdxComponents,
+            Popup,
+            PopupContent,
+            PopupTrigger,
+          }}
+        />;
       </DocsBody>
     </DocsPage>
   );

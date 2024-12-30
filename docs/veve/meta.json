@@ -2,5 +2,10 @@
   "title": "Veve",
   "description": "Testing Framework.",
   "icon": "TestTubeDiagonal",
-  "root": true
+  "root": true,
+  "pages": [
+    "---Guide---",
+    "index",
+    "cli"
+  ]
 }

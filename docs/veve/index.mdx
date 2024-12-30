@@ -1,4 +1,129 @@
 ---
-title: Introduction
-description: A brief introduction to veve.
+title: Quick Start
+description: Getting started with veve.
 ---
+
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+## Overview
+
+Veve is a modern testing framework designed specifically for TypeScript projects, offering type safety and simplicity without compromising on power or flexibility. With zero configuration required, you can start writing and running tests immediately while enjoying full TypeScript support and autocompletion.
+
+## Installation
+
+You can install Veve globally using npm:
+
+<Tabs items={['npm', 'pnpm','yarn']}>
+  <Tab value="npm">
+   ```bash
+   npm i -g veve
+   ```
+  </Tab>
+  <Tab value="pnpm">
+    ```bash
+    pnpm install veve
+    ```
+  </Tab>
+  <Tab value="yarn">
+    ```bash
+    yarn install veve
+    ```
+  </Tab>
+</Tabs>
+
+Alternatively, use our interactive setup wizard:
+
+```bash
+npx veve-setup
+```
+
+## Getting Started
+
+<Callout type="info">
+  Code examples are configured using twosslah. Feel free to click around on it!
+</Callout>
+
+### Writing Your First Test
+
+Create a new TypeScript file and write your test:
+
+```ts twoslash title="test.test.ts"
+import "veve";
+
+const add = (a: number, b: number): number => a + b;
+
+it("should add two numbers", () => {
+    assert(add(1, 2)).toBe(3)
+});
+
+run();
+```
+
+### Running Tests
+
+Execute your tests using the `veve` command:
+
+```bash
+veve
+```
+
+That's all you need to get started! No additional configuration or setup required.
+
+## Key Features
+
+### Type Safety
+Veve is built from the ground up with TypeScript in mind, providing:
+- Full TypeScript integration with native support
+- Comprehensive type checking
+- Intelligent autocompletion in your IDE
+
+### Flexible Assertions
+Veve gives you the freedom to choose your testing style:
+- Built-in assertion library with TypeScript support
+- Compatible with your preferred assertion libraries
+- Easy integration with existing test suites
+
+### Performance and Reliability
+Our focus on simplicity translates to superior performance:
+- Lightweight and fast execution
+- Minimal overhead
+- Efficient test isolation through VM contexts
+
+### Developer Experience
+We prioritize developer productivity with:
+- Zero configuration required
+- Intuitive API design
+- Clear error messages
+
+## Current Limitations
+
+While Veve is powerful, there are some current limitations to be aware of:
+
+- Top-level await is not currently supported
+- No built-in mocking functionality (we recommend using libraries like `proxyquire`)
+- Snapshot testing is planned for future releases but not yet available
+
+## Additional Resources
+
+- [API Documentation](https://tinytools.vercel.app/veve)
+- [GitHub Repository](https://github.com/tinytools-oss/veve)
+- [Issue Tracker](https://github.com/tinytools-oss/veve/issues)
+
+## Contributing
+
+We welcome contributions from the community! Whether you want to:
+- Report a bug
+- Request a feature
+- Submit a pull request
+- Improve documentation
+
+Please feel free to get involved through our GitHub repository.
+
+## Support
+
+If you need help or have questions:
+1. Check our documentation
+2. Search existing GitHub issues
+3. Open a new issue if needed
+
+Join us in building the future of TypeScript testing!
