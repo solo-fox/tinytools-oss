@@ -6,6 +6,7 @@
   "pages": [
     "---Guide---",
     "index",
+    "QuickStart",
     "cli"
   ]
 }

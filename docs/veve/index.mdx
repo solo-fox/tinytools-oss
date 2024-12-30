@@ -1,73 +1,13 @@
 ---
-title: Quick Start
-description: Getting started with veve.
+title: Overview
+description: What is veve?
 ---
 
-import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import  Image  from "next/image"
 
-## Overview
+<Image width={800} quality={1} height={100} alt="veve banner image" src="/banner.png"/>
 
 Veve is a modern testing framework designed specifically for TypeScript projects, offering type safety and simplicity without compromising on power or flexibility. With zero configuration required, you can start writing and running tests immediately while enjoying full TypeScript support and autocompletion.
-
-## Installation
-
-You can install Veve globally using npm:
-
-<Tabs items={['npm', 'pnpm','yarn']}>
-  <Tab value="npm">
-   ```bash
-   npm i -g veve
-   ```
-  </Tab>
-  <Tab value="pnpm">
-    ```bash
-    pnpm install veve
-    ```
-  </Tab>
-  <Tab value="yarn">
-    ```bash
-    yarn install veve
-    ```
-  </Tab>
-</Tabs>
-
-Alternatively, use our interactive setup wizard:
-
-```bash
-npx veve-setup
-```
-
-## Getting Started
-
-<Callout type="info">
-  Code examples are configured using twosslah. Feel free to click around on it!
-</Callout>
-
-### Writing Your First Test
-
-Create a new TypeScript file and write your test:
-
-```ts twoslash title="test.test.ts"
-import "veve";
-
-const add = (a: number, b: number): number => a + b;
-
-it("should add two numbers", () => {
-    assert(add(1, 2)).toBe(3)
-});
-
-run();
-```
-
-### Running Tests
-
-Execute your tests using the `veve` command:
-
-```bash
-veve
-```
-
-That's all you need to get started! No additional configuration or setup required.
 
 ## Key Features
 
