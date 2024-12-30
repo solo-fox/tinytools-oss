@@ -6,6 +6,7 @@
   "pages": [
     "---Guide---",
     "index",
+    "Terminology",
     "QuickStart",
     "cli",
     "---Framework---",
