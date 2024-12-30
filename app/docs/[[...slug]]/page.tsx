@@ -42,7 +42,7 @@ export default async function Page(props: {
             PopupContent,
             PopupTrigger,
           }}
-        />;
+        />
       </DocsBody>
     </DocsPage>
   );
