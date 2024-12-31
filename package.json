@@ -22,7 +22,7 @@
     "react-dom": "^19.0.0",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
-    "veve": "^1.0.1"
+    "veve": "^1.0.11"
   },
   "devDependencies": {
     "@types/mdx": "^2.0.13",

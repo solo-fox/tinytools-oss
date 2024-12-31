@@ -7,30 +7,7 @@ description: How to use veve?
 
 ## Importing Veve
 
-Veve minimizes boilerplate code. Although you can manually import and initialize the `TestCase` class, it's best to let **Veve** handle this automatically.
-
-### Avoid Boilerplate
-
-Instead of manually importing and initializing the `TestCase` class like this:
-
-```ts twoslash title="test.test.ts"
-// importing TestCase
-import { TestCase } from "veve"
-
-// Initialize TestCase
-const testCase = new TestCase("Here goes the description!")
-
-testCase.it("should pass", () => {})
-
-// Run the test case
-testCase.run()
-```
-
-This approach is discouraged as it introduces unnecessary boilerplate. **Veve** integrates test case methods directly into your environment, allowing you to write tests more succinctly:
-
-### Preferred Usage
-
-Simply import **Veve** to automatically handle `TestCase` methods:
+Veve minimizes boilerplate code.
 
 ```ts twoslash title="test.test.ts"
 import "veve" // Import Veve for auto-completion

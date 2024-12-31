@@ -44,7 +44,7 @@ Defines a parameterized test that runs once for each entry in the provided table
 
 - **Example**:
   ```ts twoslash title="test.test.ts"
-  import "veve"
+  import { assert } from "veve"
 
   each([[1, 2], [3, 4]], 'adds %d and %d', (a, b) => {
     assert(a + b).toBeGreaterThan(0)

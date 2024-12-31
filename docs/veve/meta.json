@@ -13,6 +13,7 @@
     "Usage",
     "TestCase",
     "Options",
-    "Assertion"
+    "Assertion",
+    "Fn"
   ]
 }
