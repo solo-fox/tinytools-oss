@@ -8,12 +8,18 @@
     "index",
     "Terminology",
     "QuickStart",
-    "cli",
+    "Cli",
+    "---Configuration---",
+    "Config",
+    "Env",
+    "ConfigReference",
+    "TsconfigReference",
     "---Framework---",
     "Usage",
     "TestCase",
     "Options",
     "Assertion",
-    "Fn"
+    "Fn",
+    "spyOn"
   ]
 }
