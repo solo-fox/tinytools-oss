@@ -10,16 +10,19 @@
     "QuickStart",
     "Cli",
     "---Configuration---",
-    "Config",
+    "ConfigUsage",
     "Env",
+    "Context",
     "ConfigReference",
     "TsconfigReference",
     "---Framework---",
-    "Usage",
+    "FrameworkUsage",
     "TestCase",
     "Options",
     "Assertion",
     "Fn",
-    "spyOn"
+    "spyOn",
+    "---Reportering---",
+    "ReportingUsage"
   ]
 }
