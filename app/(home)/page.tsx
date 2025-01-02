@@ -9,7 +9,9 @@ export default function HomePage() {
       <div className="flex flex-col justify-center items-start gap-5">
         <div className="flex items-center gap-5">
           <p>Veve</p>
-          <Badge className="bg-green-600">v1.0.12 LTS</Badge>
+          <Badge className="bg-green-600">
+            v1.0.13 LTS
+          </Badge>
         </div>
         <p>
           A zero-config, type-safe, TypeScript-native testing framework and
